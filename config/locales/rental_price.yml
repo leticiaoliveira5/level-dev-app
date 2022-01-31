@@ -1,0 +1,11 @@
+pt-BR:
+  activerecord:
+    models:
+      category: 'Categoria'
+      rental_price: 'Preço da locação'
+    attributes:
+      rental_price:
+        daily_rate: 'Diária'
+        category: 'Categoria'
+        category_id: 'Categoria'
+        subsidiary: 'Filial'

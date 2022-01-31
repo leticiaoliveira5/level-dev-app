@@ -1,0 +1,16 @@
+<%= render partial: 'shared/errors', locals: { record: category } %>
+<%= form_for category do |f| %>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"><%= 'Nome' %></span>
+    </div>
+    <%= f.text_field(:name, class:"name form-control", describedby: 'basic-addon1') %>
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon2"><%= 'Diária padrão' %></span>
+    </div>
+    <%= f.number_field(:daily_rate, class:"daily_rate form-control", describedby: 'basic-addon2') %>
+  </div>
+  <%= f.submit 'Enviar', class: 'btn btn-primary' %>
+<% end %>
